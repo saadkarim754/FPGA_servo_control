@@ -1,0 +1,5 @@
+NET "mclk"      LOC = "C9";     # 50 MHz onboard clock
+NET "sw0"       LOC = "L13" | IOSTANDARD = LVTTL | PULLUP ;  # Increase angle
+NET "sw1"       LOC = "L14" | IOSTANDARD = LVTTL | PULLUP ;  # Decrease angle
+NET "Led"       LOC = "F12" | IOSTANDARD = LVTTL ;           # Output LED
+NET "servo"     LOC = "C5" | IOSTANDARD = LVTTL ;           # Output to servo
