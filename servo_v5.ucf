@@ -1,0 +1,13 @@
+# ================= CLOCK & UART =================
+NET "clk50mhz" LOC = "C9" | IOSTANDARD = LVCMOS33 | PERIOD = 20ns;
+NET "uart_rx"  LOC = "U8" | IOSTANDARD = LVCMOS33 | PULLUP;
+
+# ================= SERVO OUTPUTS =================
+# y-Axis Servo 1 control (e.g., Right fin)
+NET "servo_y1" LOC = "C5" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 6 ;
+
+# y-Axis Servo 2 control (e.g., Left fin - same PWM signal as X1)
+NET "servo_y2" LOC = "A4" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 6 ;
+
+# x-Axis control Servo
+NET "servo_x" LOC = "D5" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 6 ;
